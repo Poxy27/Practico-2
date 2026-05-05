@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Deportes</title>
+</head>
+    <body>
+        <h1>Encuesta de Deportes</h1>
+        <form action="tratar_form.php" method="GET" enctype="multipart/form-data">   
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre"/>
+
+            <label for="apellido">Tu apellido:</label>
+            <input type="text" id="apellido" name="apellido"/><br><br>
+
+            <label for="email">Tu Email:</label>
+            <input id="email" name="email" type="email"/>
+
+            <p>¿Desea recibir informacion via email?</p>
+            <input type="radio" id="si" name="email_info" value="si"/> <label for="si">Si</label>
+            <input type="radio" id="no" name="email_info" value="no"/> <label for="no">No</label><br>
+
+            <p>¿Que deportes de la lista son de su interes? "Marque almenos uno"</p>
+            <input type="checkbox" id="futbol" name="deportes" value="futbol"/> <label for="futbol">Fútbol</label><br>
+            <input type="checkbox" id="basquet" name="deportes" value="basquet"/> <label for="basquet">Basquet</label><br>
+            <input type="checkbox" id="voley" name="deportes" value="voley"/> <label for="voley">Voley</label><br>
+            <input type="checkbox" id="tenis" name="deportes" value="tenis"/> <label for="tenis">Tenis</label><br>
+
+            <label for="puntaje">¿Cuanto le gusta el sitio web? (0 = No me gusta nada, 10 = Me gusta mucho)</label>
+            <input type="number" id="puntaje" name="puntaje" min="0" max="10"/><br><br>
+
+            <label for="color_ropa">¿Que color de ropa le gustaria que se utilice en la siguiente temporada?</label>
+            <input type="color" id="color_ropa" name="color_ropa"/><br><br>
+
+            <label for="fecha">Fecha del hoy:</label>
+            <input type="date" id="fecha" name="fecha"/><br><br>
+
+            <label for="tel">Tu teléfono:</label>
+            <input type="tel" id="tel" name="tel"/><br><br>
+
+            <label for="hora_a">Hora de contacto desde:</label>
+            <input type="time" id="hora_a" name="hora_a"/>
+
+            <label for="hora_b">hasta:</label>
+            <input type="time" id="hora_b" name="hora_b"/><br><br>
+
+            <label for="modelo_prenda">Adjunte una imagen de una prenda que le haya gustado su diseño:</label>
+            <input type="file" id="modelo_prenda" name="modelo_prenda" accept="image/*"/><br><br>
+
+            <button type="submit">Enviar Encuesta</button>
+        </form>
+    </body>
+</html>
